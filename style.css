@@ -270,14 +270,15 @@ img {
 }
 
 .hero-image img {
-  display: flex;
+  display: block;
   justify-content: center;
+  margin : 0 auto;
   
 }
 
 .hero-image-placeholder img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary) 0%, #60a5fa 100%);
   display: flex;
@@ -286,6 +287,12 @@ img {
   color: white;
   font-size: 1.25rem;
   font-weight: 500;
+}
+@media (max-width:78px){
+ .hero-image-placeholder img{
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /* ===== About Section ===== */
